@@ -1,0 +1,867 @@
+main {
+  margin-bottom: 2rem;
+  background-color: rgba(0, 0, 255, 0);
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 890px) {
+  main {
+    display: block;
+  }
+}
+
+/*DIV MAIN I::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.div-main-I {
+  background-color: rgba(20, 190, 190, 0);
+  background-image: url(1.img/escultura-de-justicia.svg);
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  position: relative;
+}
+
+@media (max-width: 890px) {
+  .div-main-I {
+    background-size: 32%;
+    background-position: bottom;
+    background-position-x: 90%;
+  }
+}
+
+@media (max-width: 620px) {
+  .div-main-I {
+    background-size: 32%;
+    background-position: bottom;
+    background-position-x: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .div-main-I {
+    background-size: 20%;
+    background-position: bottom;
+    background-position-x: 95%;
+  }
+}
+
+/*TIUTLAR PRINCIPAL.........................................................................*/
+.contenedor-titular-principal {
+  margin: 0 2rem 5rem 0;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  gap: 1.5rem;
+  background-color: rgba(31, 107, 83, 0);
+  border: solid rgba(0, 0, 0, 0) 1rem;
+  position: relative;
+}
+
+@media (max-width: 525px) {
+  .contenedor-titular-principal {
+    display: none;
+  }
+}
+
+.img-logo-principal {
+  height: 13rem;
+  background-color: rgba(127, 255, 212, 0);
+}
+
+h1 {
+  font-size: 6rem;
+  background-color: rgba(127, 255, 212, 0);
+  font-variant: small-caps;
+  letter-spacing: 1.5rem;
+  font-weight: 600;
+}
+
+.span-título-principal {
+  margin-top: -1rem;
+  display: block;
+  font-size: 3.5rem;
+  letter-spacing: -0.2rem;
+  font-weight: 400;
+  word-spacing: 1rem;
+}
+
+/*Logo-main: este logo aparece cuando se necesita que el titular principal sea escalable*/
+
+.logo-main {
+  width: 20vw;
+  height: auto;
+  background-color: rgba(0, 255, 255, 0);
+  display: none;
+  margin: 0 auto 1rem auto;
+}
+
+@media (max-width: 525px) {
+  .logo-main {
+    display: block;
+    width: 80vw;
+    height: auto;
+  }
+}
+
+/*Tarjeta de presentación....................................................................................*/
+.contenedor-tarjeta-de-presentación {
+  position: relative;
+  background-color: rgba(0, 255, 255, 0);
+  width: fit-content;
+}
+
+@media (max-width: 450px) {
+  .contenedor-tarjeta-de-presentación {
+    margin-left: 1rem;
+  }
+}
+/*Subcontenedor perfil...................................*/
+.sub-contenedor-perfil {
+  background-color: rgba(0, 255, 255, 0);
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 306px) {
+  .sub-contenedor-perfil {
+    margin-bottom: 1rem;
+  }
+}
+
+.sub-contenedor-perfil h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: lato;
+  text-align: right;
+  color: black;
+}
+
+@media (max-width: 306px) {
+  .sub-contenedor-perfil h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.span-perfil-1 {
+  padding-right: 4rem;
+}
+@media (max-width: 350px) {
+  .span-perfil-1 {
+    padding-right: 1rem;
+  }
+}
+
+.span-perfil-2 {
+  display: block;
+  border-top: solid 0.3rem black;
+  padding-right: 4rem;
+}
+
+@media (max-width: 350px) {
+  .span-perfil-2 {
+    padding-right: 1rem;
+  }
+}
+
+.marco-redondo-perfil {
+  height: 10rem;
+  width: 10rem;
+  border: solid black 0.5rem;
+  outline: solid rgba(0, 0, 0, 0.281) 0.5rem;
+  border-radius: 100%;
+  background-image: url(1.img/foto-perfil.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 350px) {
+  .marco-redondo-perfil {
+    height: 27vw;
+    width: 27vw;
+    padding-right: 0;
+    outline: solid rgba(0, 0, 0, 0) 0.5rem;
+  }
+}
+
+/*Subcontenedor datos...................................*/
+.sub-contenedor-datos {
+  background-color: rgba(192, 221, 221, 0);
+  position: relative;
+  bottom: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+@media (max-width: 306px) {
+  .sub-contenedor-datos {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 260px) {
+  .sub-contenedor-datos {
+    font-size: 1.4rem;
+  }
+}
+
+.sub-contenedor-datos li {
+  margin-bottom: 0.5rem;
+}
+
+.sub-contenedor-datos a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border: solid rgba(255, 255, 255, 0) 0.1rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 306px) {
+  .sub-contenedor-datos a {
+    margin-left: 0;
+  }
+
+  .sub-contenedor-datos li:nth-child(3) {
+    font-size: 1.2rem;
+  }
+}
+
+.sub-contenedor-datos a:hover {
+  border: solid white 0.1rem;
+  background-color: white;
+  transition: 0.8s;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.068);
+}
+
+.icono-contacto {
+  background-color: rgba(127, 255, 212, 0);
+  height: 3rem;
+  fill: rgb(104, 99, 99);
+}
+
+/*Subcontenedor redes sociales...................................*/
+.sub-contenedor-redes-sociales {
+  background-color: rgba(0, 255, 255, 0);
+  position: absolute;
+  bottom: -2rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inoicon-redes-sociales {
+  font-size: 3rem;
+  color: rgb(104, 99, 99);
+}
+
+.sub-contenedor-redes-sociales a {
+  display: block;
+  height: 3rem;
+  border-radius: 5px;
+  border: solid rgba(255, 255, 255, 0) 0.1rem;
+}
+
+.sub-contenedor-redes-sociales a:hover {
+  border: solid white 0.1rem;
+  background-color: white;
+  transition: 0.8s;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.068);
+}
+
+/*DIV MAIN II::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.div-main-II {
+  width: 50%;
+  background-color: rgba(0, 255, 255, 0);
+}
+
+@media (max-width: 890px) {
+  .div-main-II {
+    width: 100%;
+  }
+}
+
+.div-main-II p {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+  line-height: 2.5rem;
+}
+
+.icono-servicios {
+  background-color: white;
+  background-image: url(1.img/icono-servicio-legal.svg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+/*Slider-------------------------------------------------------------------------------------*/
+.slider-frame {
+  height: 23vw;
+  width: 35vw;
+  margin: 0 auto 0 auto;
+  background-color: aquamarine;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+@media (min-width: 1261px) {
+  .slider-frame {
+    height: 291px;
+    width: 443px;
+  }
+}
+
+@media (max-width: 890px) {
+  .slider-frame {
+    height: 46vw;
+    width: 70vw;
+  }
+}
+
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 500%;
+
+  animation: slide 40s infinite ease-in-out;
+}
+
+.slider-frame li {
+  height: 46vw;
+  width: 70vw;
+  list-style: none;
+  background-color: aqua;
+}
+
+.slider-frame li:nth-child(1) {
+  background-color: rgb(255, 0, 0);
+  background-image: url(1.img/escuchar-lugar.jpg);
+  background-size: 100%;
+}
+
+.slider-frame li:nth-child(2) {
+  background-color: rgb(255, 153, 0);
+  background-image: url(1.img/pensar-bienestar.jpg);
+  background-size: 100%;
+}
+
+.slider-frame li:nth-child(3) {
+  background-color: rgb(255, 251, 0);
+  background-image: url(1.img/escribir-persuadir.jpg);
+  background-size: 100%;
+}
+
+.slider-frame li:nth-child(4) {
+  background-color: rgb(115, 255, 0);
+  background-image: url(1.img/vociferar-realidad.jpg);
+  background-size: 100%;
+}
+
+.slider-frame li:nth-child(5) {
+  background-color: blue;
+  background-image: url(1.img/servir-el-arte.jpg);
+  background-size: 100%;
+}
+
+.slider-frame .propaganda {
+  width: 1000px;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0%;
+  }
+
+  11% {
+    margin-left: 0%;
+  }
+
+  22% {
+    margin-left: -100%;
+  }
+
+  33% {
+    margin-left: -100%;
+  }
+
+  44% {
+    margin-left: -200%;
+  }
+
+  55% {
+    margin-left: -200%;
+  }
+
+  66% {
+    margin-left: -300%;
+  }
+  77% {
+    margin-left: -300%;
+  }
+  88% {
+    margin-left: -400%;
+  }
+  99% {
+    margin-left: -400%;
+  }
+}
+
+/*Slider................................................
+.slider {
+  margin: 0 auto 0 auto;
+  height: 23vw;
+  width: 35vw;
+  background-color: rgb(255, 255, 255);
+  background-image: url(1.img/escuchar-lugar.jpg);
+  background-size: 100%;
+}
+
+/*
+
+@media (min-width: 1261px) {
+  .slider {
+    height: 252px;
+    width: 504px;
+  }
+}
+
+@media (max-width: 890px) {
+  .slider {
+    height: 40vw;
+    width: 60vw;
+  }
+}
+
+/*TITULAR DECUNDARIO ODD::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+.titular-secundario {
+  display: flex;
+  background-color: rgba(101, 48, 151, 0.534);
+  align-items: END;
+}
+
+.titular-secundario h2 {
+  border-top: solid 0.5rem var(--azul-cielo);
+  text-align: right;
+  width: 100%;
+  background-color: rgba(127, 255, 212, 0);
+  margin-bottom: 1.8rem;
+}
+
+.marco-redondo-azul {
+  height: 10rem;
+  width: 12rem;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  border: solid var(--azul-cielo) 0.5rem;
+  border-radius: 50%;
+}
+*/
+
+/*TITULAR sECUNDARIO EVEN::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+/*SECCION - ÁREAS DE EJERCICIO PROFESIONAL_____________________________________________________________________________*/
+/*_____________________________________________________________________________________________________________________*/
+.icono-titular-áreas-de-ejercicio {
+  background-color: white;
+  background-image: url(1.img/icono-framework.svg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.contenedor-áreas-de-ejercicio {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 890px) {
+  .contenedor-áreas-de-ejercicio {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .contenedor-áreas-de-ejercicio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .contenedor-áreas-de-ejercicio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .contenedor-áreas-de-ejercicio {
+    display: block;
+  }
+}
+
+.contenedor-áreas-de-ejercicio a {
+  display: block;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: solid rgba(255, 255, 255, 0) 0.1rem;
+  border-radius: 10px;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+@media (max-width: 450px) {
+  .contenedor-áreas-de-ejercicio a {
+    width: fit-content;
+    margin: 0.1rem;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  }
+}
+
+.contenedor-áreas-de-ejercicio a:hover {
+  border: solid white 0.1rem;
+  background-color: white;
+  transition: 0.8s;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.068);
+}
+
+/*SECCION - Evaluaciones de clientes_____________________________________________________________________________*/
+/*_____________________________________________________________________________________________________________________*/
+.icono-titular-evaluaciones {
+  background-color: white;
+  background-image: url(1.img/icono-estrella.svg);
+  background-size: 98%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 0rem;
+}
+/*..................................................................................*/
+.carrousel {
+  margin: 0 auto 0 auto;
+  width: 80%;
+  padding: 0.5rem;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  overflow: hidden;
+  background-color: rgba(44, 231, 231, 0);
+}
+
+@media (max-width: 750px) {
+  .carrousel {
+    width: 100%;
+  }
+}
+
+.grande {
+  width: 400%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+  background-color: rgba(255, 68, 0, 0);
+  position: relative;
+}
+
+.sub {
+  height: 22rem;
+  width: calc(100% / 2 - 2em);
+  margin: 2rem;
+  padding: 2rem;
+  min-height: 10vh;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.315);
+  height: 22rem;
+  background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 750px) {
+  .sub {
+    height: 25rem;
+  }
+}
+
+@media (max-width: 590px) {
+}
+
+.sub li:nth-child(1) {
+  font-weight: 900;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid black;
+}
+
+@media (max-width: 590px) {
+  .sub:nth-child(1),
+  .sub:nth-child(2) {
+    height: fit-content;
+  }
+}
+
+.estrellas-evaluaciones {
+  height: 1.6rem;
+}
+
+.sub li:nth-child(2) {
+  font-weight: 900;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub:nth-child(1) {
+}
+.sub:nth-child(2) {
+}
+.sub:nth-child(3) {
+}
+.sub:nth-child(4) {
+}
+
+.carrousel .puntos {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(46, 46, 192, 0);
+}
+
+.carrousel .punto {
+  width: 2rem;
+  height: 2rem;
+  margin: 2rem;
+  font-size: 1.5rem;
+  transition: all 0.4s ease;
+  border: solid rgba(0, 0, 0, 0) 1px;
+  border-radius: 100%;
+  background-color: rgba(122, 119, 119, 0.247);
+  text-align: center;
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.411);
+  color: rgba(0, 0, 0, 0.24);
+}
+
+.carrousel .punto.activo {
+  background-color: white;
+}
+
+.sección-evaluaciones-de-clientes p {
+  width: fit-content;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  text-indent: 0;
+}
+
+.sección-evaluaciones-de-clientes a:link {
+  background-color: var(--gris-rojizo);
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: white;
+}
+.sección-evaluaciones-de-clientes a:visited {
+  color: white;
+}
+.sección-evaluaciones-de-clientes a:hover {
+}
+.sección-evaluaciones-de-clientes a:active {
+}
+
+/*SECCION - contáctanos_____________________________________________________________________________*/
+/*_____________________________________________________________________________________________________________________*/
+
+.icono-titular-contáctanos {
+  background-color: white;
+  background-image: url(1.img/icono-formulario.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position-x: 70%;
+  background-position-y: center;
+}
+
+.contenedor-contáctanos {
+  margin: 0 auto 0 auto;
+  width: 90%;
+  height: fit-content;
+  padding: 0.5rem;
+  transition: all 0.4s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .contenedor-contáctanos {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 350px) {
+  .contenedor-contáctanos {
+    width: 100%;
+  }
+}
+
+.contenedor-contáctanos p {
+  margin: 0;
+  padding: 3rem 3rem 3rem 3rem;
+}
+
+@media (max-width: 800px) {
+  .contenedor-contáctanos p {
+    padding: 0 3rem 3rem 3rem;
+  }
+}
+
+.sub-contenedor-contáctanos {
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  .sub-contenedor-contáctanos {
+    width: 100%;
+  }
+}
+
+.icono-contáctanos-p {
+  height: 2rem;
+}
+
+/*Subcontenedor datos...................................*/
+.sub-contenedor-datos-2 {
+  background-color: rgba(192, 221, 221, 0);
+  position: relative;
+  bottom: 1.5rem;
+  margin-left: 4rem;
+}
+
+@media (max-width: 306px) {
+  .sub-contenedor-datos-2 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 260px) {
+  .sub-contenedor-datos-2 {
+    font-size: 1.4rem;
+  }
+}
+
+.sub-contenedor-datos-2 li {
+  margin-bottom: 0.5rem;
+}
+
+.sub-contenedor-datos-2 a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border: solid rgba(255, 255, 255, 0) 0.1rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 306px) {
+  .sub-contenedor-datos-2 a {
+    margin-left: 0;
+  }
+  .sub-contenedor-datos-2 li:nth-child(3) {
+    font-size: 1.2rem;
+  }
+}
+
+.sub-contenedor-datos-2 a:hover {
+  border: solid white 0.1rem;
+  background-color: white;
+  transition: 0.8s;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.308);
+}
+
+.icono-contacto-2 {
+  background-color: rgba(127, 255, 212, 0);
+  height: 3rem;
+  fill: rgb(104, 99, 99);
+}
+/*Contenedor formulario........................................*/
+.contenedor-formulario {
+  height: 100%;
+  width: 100%rem;
+  border-radius: 10px;
+  background-color: var(--azul-oscuro);
+  padding: 2rem 2rem 4rem 2rem;
+  color: rgb(214, 207, 207);
+}
+
+@media (max-width: 800px) {
+  .contenedor-formulario {
+    height: fit-content;
+  }
+}
+
+.logo-formulario {
+  height: 5rem;
+  width: fit-content;
+  margin-bottom: 1rem;
+  background-color: rgba(0, 255, 255, 0);
+  display: block;
+}
+label,
+input,
+textarea,
+select,
+button {
+  display: block;
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+input,
+textarea,
+select {
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  height: 5rem;
+}
+
+button {
+  width: fit-content;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+/*img-composición-familiar...................*/
+.img-composición-familia {
+  width: fit-content;
+  position: relative;
+  background-color: rgba(255, 0, 0, 0);
+  display: none;
+}
+
+.siluetas-pareja {
+  height: 15rem;
+}
+.siluetas-niños {
+  height: 10rem;
+  color: aqua;
+  position: absolute;
+  bottom: -1rem;
+  left: 2rem;
+}
+
+.niños2:hover {
+  fill: blue;
+}

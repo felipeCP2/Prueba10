@@ -1,0 +1,79 @@
+.icono-titular-formulario-completo {
+  background-color: white;
+  background-image: url(1.img/icono-formulario.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position-x: 70%;
+  background-position-y: center;
+}
+
+.sub-contenedor:nth-child(2) {
+  background-color: rgba(0, 255, 255, 0);
+  padding: 2rem;
+}
+
+p {
+  margin: 0;
+  padding: 0 0 1rem 0;
+  text-indent: 5rem;
+}
+
+p:nth-child(1) {
+  text-indent: 0;
+}
+
+label,
+input,
+textarea,
+select {
+  display: block;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  height: 2.5rem;
+}
+
+input,
+select,
+textarea {
+  margin-bottom: 1rem;
+}
+
+textarea {
+  height: 5rem;
+}
+
+h3 {
+  border-bottom: solid 0.2rem var(--gris-rojizo);
+}
+
+.sub-contenedor-formulario-largo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1000px) {
+  .sub-contenedor-formulario-largo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .sub-contenedor-formulario-largo {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.sub-contenedor-formulario-largo div {
+  padding: 1rem;
+}
+
+.selector-nacimiento {
+  display: inline;
+  width: fit-content;
+}
+
+.boton-enviar-2 {
+  display: block;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 2rem auto 0 auto;
+}

@@ -1,0 +1,383 @@
+/*SETEOS INICIALES________________________________________________________________________*/
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/*________________________________________________________________________________________*/
+html {
+  font-size: 80%;
+  --azul-oscuro: rgb(21, 96, 130);
+  --azul-intermedio: rgb(28, 126, 170);
+  --azul-cielo: rgb(70, 177, 225);
+  --azul-verdeagua: rgb(71, 221, 225);
+  --azul-alternativa: rgb(41, 126, 129);
+  --blanco: white;
+  font-family: lato;
+}
+
+html {
+  font-size: 62.5%;
+  --azul-oscuro: rgb(68, 108, 128);
+  --azul-intermedio: rgb(89, 147, 179);
+  --azul-cielo: rgb(143, 196, 221);
+  --azul-verdeagua: rgb(147, 220, 221);
+  --azul-alternativa: rgb(69, 125, 126);
+  --gris-rojizo: rgb(104, 99, 99);
+  --blanco: white;
+  font-family: lato;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(128, 117, 117, 0.164);
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+/*Anchor____________________________________________________*/
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: unset;
+}
+
+/*NAV______________________________________________________*/
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: var(--azul-oscuro);
+  color: aliceblue;
+}
+
+nav ul {
+  margin-left: 5%;
+}
+
+/*Fuentes____________________________________________________*/
+
+/*Clases de fuentes*/
+@media (max-with: 500000px) {
+  .lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  /* <uniquifier>: Use a unique and descriptive class name*/
+  /* <weight>: Use a value from 100 to 900*/
+
+  .montserrat-uniquifier {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+}
+
+/*Contenedor general____________________________________________________*/
+
+.contenedor-general {
+  width: 1134px;
+  margin: 4rem auto 0 auto;
+  padding: 3rem 5rem 3rem 5rem;
+  background-color: var(--blanco) rgba(128, 117, 117, 0.164);
+}
+
+@media (max-width: 1260px) {
+  .contenedor-general {
+    width: 87%;
+    margin: 4rem auto 0 auto;
+    padding: 3rem 5rem 3rem 5rem;
+    background-color: var(--blanco) rgba(128, 117, 117, 0.164);
+  }
+}
+
+@media (max-width: 1100px) {
+  .contenedor-general {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .contenedor-general {
+    padding: 3rem 0.5rem 3rem 0.5rem;
+  }
+}
+
+/*Titulares y párrafo____________________________________________________*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: montserrat, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--azul-intermedio);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  color: var(--gris-rojizo);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+p {
+  padding: 3rem;
+  /*text-indent: 5rem;*/
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+}
+
+/*TITULAR SECUNDARIO::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.contenendor-titular-secundario {
+  background-color: rgba(0, 255, 255, 0);
+  display: flex;
+  align-items: center;
+}
+
+.marco-redondo-titular-secundario {
+  height: 8rem;
+  width: 8rem;
+  border: solid rgb(104, 99, 99) 0.5rem;
+  border-radius: 50%;
+}
+
+@media (max-width: 620px) {
+  .marco-redondo-titular-secundario {
+    height: 6rem;
+    width: 6rem;
+    border: solid rgb(104, 99, 99) 0.3rem;
+  }
+}
+
+.contenendor-titular-secundario h2 {
+  width: calc(100% - 10rem);
+  background-color: rgba(0, 0, 255, 0);
+  font-size: 2.5rem;
+}
+
+@media (max-width: 620px) {
+  .contenendor-titular-secundario h2 {
+    font-size: 1.7rem;
+  }
+}
+
+.span-titular-secundario-1 {
+  display: block;
+  border-bottom: solid rgb(104, 99, 99) 0.5rem;
+  padding: 0 0 0 2rem;
+}
+
+@media (max-width: 620px) {
+  .span-titular-secundario-1 {
+    border-bottom: solid rgb(104, 99, 99) 0.3rem;
+  }
+}
+
+.span-titular-secundario-2 {
+  display: block;
+  padding: 0 0 0 2rem;
+  font-weight: 400;
+}
+
+@media (max-width: 620px) {
+  .span-titular-secundario-1 {
+    padding: 0;
+  }
+
+  .span-titular-secundario-2 {
+    padding: 0;
+  }
+}
+
+/*FOOTER - Evaluaciones de clientes_____________________________________________________________________________*/
+/*_____________________________________________________________________________________________________________________*/
+
+footer {
+  background-color: var(--azul-oscuro);
+  height: fit-content;
+  padding: 2rem 2rem 5rem 2rem;
+  position: relative;
+}
+
+.logo-footer {
+  height: 8rem;
+  background-color: rgba(0, 255, 255, 0);
+  width: fit-content;
+  fill: white;
+}
+
+@media (max-width: 350px) {
+  .logo-footer {
+    height: auto;
+    width: 80vw;
+    margin: 0 auto 0 auto;
+  }
+}
+
+.contenedor-footer {
+  color: rgb(200, 208, 214);
+  display: flex;
+  gap: 3rem;
+}
+
+@media (max-width: 610px) {
+  .contenedor-footer {
+    display: block;
+  }
+}
+
+footer a:link,
+footer a:visited {
+  color: white;
+}
+table {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+th {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+td {
+  margin-bottom: 1rem;
+  padding-left: 3rem;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 400px) {
+  th {
+    font-size: 1.3rem;
+  }
+
+  td {
+    padding-left: 0.5rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 300px) {
+  th {
+    font-size: 1rem;
+  }
+
+  td {
+    padding-left: 0;
+    font-size: 1rem;
+  }
+}
+
+.sub-contenedor-footer {
+  margin-top: 2rem;
+}
+
+.copi-right {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.copi-right p {
+  padding: 0;
+  margin: 0 auto 0 auto;
+  height: fit-content;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(240, 248, 255, 0.561);
+  font-size: 1.2rem;
+}
+
+.a-formulario-clientes:link,
+.a-formulario-clientes:visited {
+  color: rgb(232, 207, 168);
+  border-radius: 5px;
+  padding: 0 1rem 0 1rem;
+  display: block;
+}
+
+@media (max-width: 415px) {
+  .copi-right p {
+    font-size: 1rem;
+  }
+}
